@@ -1,0 +1,22 @@
+<h1 mat-dialog-title>Enter new task</h1>
+<div mat-dialog-content>
+    <form>
+        <mat-form-field class="example-full-width">
+            <mat-label>Task title</mat-label>
+            <input name="title" matInput [(ngModel)]="data.title">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Leave a description</mat-label>
+            <textarea matInput placeholder="Ex. It makes me feel..." 
+            name="description" matInput [(ngModel)]="data.description"></textarea>
+        </mat-form-field>
+        <!-- <mat-form-field class="example-full-width"> -->
+        <mat-slide-toggle [(ngModel)]="data.status" name="status">Active</mat-slide-toggle>
+    <!-- </mat-form-field> -->
+    </form>
+</div>
+<div mat-dialog-actions class="d-flex justify-content-center">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Create new task</button>
+</div>
