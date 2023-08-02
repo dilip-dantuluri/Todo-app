@@ -13,6 +13,7 @@ import {  MatPaginatorModule } from '@angular/material/paginator';
 import {  MatSortModule } from '@angular/material/sort';
 import {  MatTableModule } from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
+import { ToastrModule } from 'ngx-toastr';
 import {
   MatSlideToggleModule,
   _MatSlideToggleRequiredValidatorModule,
@@ -38,6 +39,7 @@ import { TodoDialogComponent } from './components/todo-dialog/todo-dialog.compon
     MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
+    ToastrModule.forRoot(),
     MatSlideToggleModule,
     MatPaginatorModule,
     MatSortModule,
