@@ -4,4 +4,5 @@ export interface TodoData {
     description: string;
     status: string;
     createdDate: Date;
+    completedDate?:Date;
 }
