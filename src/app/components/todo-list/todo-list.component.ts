@@ -37,7 +37,7 @@ export class TodoListComponent {
   setDataBound() {
     let data = [];
     if(this.selectedValue !== 'all') {
-      data = this.allData.filter(val=> {
+       this.allData.filter(val=> {
         if(val.status === this.selectedValue) {
           data.push(val);
         }
